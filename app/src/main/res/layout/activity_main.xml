@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    >
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"
+      android:text="小程序任务栈管理Demo"
+      android:textColor="@color/black"
+      android:textSize="30sp"
+      />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="演示方式：\n多次点击下面的button，每次可以打开一个新的任务栈。\n任务栈到达上限后，会自动清理最先打开的任务栈。"
+      android:textColor="@color/black"
+      android:textSize="18sp"
+      />
+  <Button
+      android:id="@+id/btn_start_main"
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:layout_marginTop="30dp"
+      android:text="打开测试页面"
+      />
+
+</LinearLayout>

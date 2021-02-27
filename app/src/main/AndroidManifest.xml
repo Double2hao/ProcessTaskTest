@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.processtasktest">
+
+  <application
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:supportsRtl="true"
+      android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+    <activity android:name=".MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".test.TestActivityOne"
+        android:launchMode="singleTask"
+        android:process=":testprocess1"
+        android:taskAffinity="task.one" />
+    <activity
+        android:name=".test.TestActivityTwo"
+        android:launchMode="singleTask"
+        android:process=":testprocess2"
+        android:taskAffinity="task.two" />
+    <activity
+        android:name=".test.TestActivityThree"
+        android:launchMode="singleTask"
+        android:process=":testprocess3"
+        android:taskAffinity="task.three" />
+    <activity
+        android:name=".test.TestActivityFour"
+        android:launchMode="singleTask"
+        android:process=":testprocess4"
+        android:taskAffinity="task.four" />
+  </application>
+
+</manifest>
